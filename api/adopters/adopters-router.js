@@ -33,8 +33,8 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.get('/:id/dogs', (req, res) => {
-  
+router.get('/:id/dogs', async (req, res) => {
+  console.log('get dogs by adopter')
 });
 
 router.post('/', (req, res) => {
