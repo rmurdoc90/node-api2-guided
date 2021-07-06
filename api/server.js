@@ -10,8 +10,6 @@ server.use(express.json());
 const Adopter = require('./adopters/adopters-model');
 const Dog = require('./dogs/dogs-model');
 
-
-
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS

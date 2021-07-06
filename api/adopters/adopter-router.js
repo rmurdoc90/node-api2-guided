@@ -1,3 +1,5 @@
+const Adopter = require('')
+
 // ADOPTERS ENDPOINTS
 // ADOPTERS ENDPOINTS
 // ADOPTERS ENDPOINTS
