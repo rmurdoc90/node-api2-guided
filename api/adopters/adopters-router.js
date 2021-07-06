@@ -40,7 +40,7 @@ router.get('/:id/dogs', async (req, res) => {
     if (dogs.length) {
       res.status(200).json(dogs)
     } else {
-      res.status(404).json({ message: 'adopter does not exist'})
+      res.status(404).json({ message: 'adopter does not exist!!!!!!!!!!!!'})
     }
   } catch (err) {
     res.status(500).json({
