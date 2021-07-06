@@ -5,11 +5,11 @@ const express = require('express');
 const adoptersRouter = require('./adopters/adopters-router');
 const server = express();
 
+server.use('/api/adopters', adoptersRouter);
 server.use(express.json());
 
 const Dog = require('./dogs/dogs-model');
 
-server.use('/api/adopters', adoptersRouter);
 
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
