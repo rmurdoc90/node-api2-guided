@@ -35,7 +35,7 @@ router.get('/:id', (req, res) => {
 
 router.get('/:id/dogs', async (req, res) => {
   try {
-
+    throw new Error('this is the crash and it is awful')
   } catch (err) {
     res.status(500).json({
       custom: 'crash inside endpoint',
