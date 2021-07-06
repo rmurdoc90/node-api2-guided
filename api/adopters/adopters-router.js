@@ -1,9 +1,8 @@
 const express = require('express')
 const Adopter = require('./adopters-model')
 
-// ADOPTERS ENDPOINTS
-// ADOPTERS ENDPOINTS
-// ADOPTERS ENDPOINTS
+const router = express.Router()
+
 router.get('/api/adopters', (req, res) => {
   Adopter.find(req.query)
     .then(adopters => {
@@ -98,3 +97,5 @@ router.put('/api/adopters/:id', (req, res) => {
       });
     });
 });
+
+// ?
