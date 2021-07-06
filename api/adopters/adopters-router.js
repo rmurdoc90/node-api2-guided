@@ -16,6 +16,10 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/', () => {
+
+})
+
 router.get('/:id', (req, res) => {
   Adopter.findById(req.params.id)
     .then(adopter => {
