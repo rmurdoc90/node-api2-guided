@@ -38,6 +38,9 @@ router.get('/:id/dogs', async (req, res) => {
     const { id } = req.params
     const stuff = await Adopter.findDogs(id)
     console.log(stuff)
+    //
+    //
+    //
   } catch (err) {
     res.status(500).json({
       custom: 'crash inside endpoint',
