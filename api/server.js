@@ -9,6 +9,8 @@ server.use(express.json());
 
 const Dog = require('./dogs/dogs-model');
 
+server.use('/');
+
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
