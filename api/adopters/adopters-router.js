@@ -1,3 +1,4 @@
+const express = require('express')
 const Adopter = require('./adopters-model')
 
 // ADOPTERS ENDPOINTS
