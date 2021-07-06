@@ -1,3 +1,6 @@
+const express = require('express')
+const Dog = require('./dogs-model')
+
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
 // DOGS ENDPOINTS
