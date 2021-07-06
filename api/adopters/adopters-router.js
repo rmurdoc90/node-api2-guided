@@ -37,8 +37,11 @@ router.get('/:id/dogs', async (req, res) => {
   try {
     const { id } = req.params
     const dogs = await Adopter.findDogs(id)
-    if (dogs.len)
-    res.status(200).json(dogs)
+    if (dogs.length) {
+      res.status(200).json(dogs)
+    } else {
+      res.status(404).json({ message: 'adopter does not exist'})
+    }
   } catch (err) {
     res.status(500).json({
       custom: 'crash inside endpoint',
