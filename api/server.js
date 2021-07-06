@@ -2,7 +2,7 @@
 // BREAK UP THIS MONOLITHIC FILE USING ROUTES
 // BREAK UP THIS MONOLITHIC FILE USING ROUTES
 const express = require('express');
-
+const adoptersRouter = require('./')
 const server = express();
 
 server.use(express.json());
