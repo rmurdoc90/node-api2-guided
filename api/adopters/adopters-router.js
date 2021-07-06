@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.get('/api/adopters/:id/dogs', (req, res) => {
+router.get('/:id/dogs', (req, res) => {
   Adopter.findDogs(req.params.id)
     .then(dogs => {
       if (dogs.length > 0) {
@@ -50,7 +50,7 @@ router.get('/api/adopters/:id/dogs', (req, res) => {
     });
 });
 
-router.post('/api/adopters', (req, res) => {
+router.post('/', (req, res) => {
   Adopter.add(req.body)
     .then(adopter => {
       res.status(201).json(adopter);
@@ -63,7 +63,7 @@ router.post('/api/adopters', (req, res) => {
     });
 });
 
-router.delete('/api/adopters/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
   Adopter.remove(req.params.id)
     .then(count => {
       if (count > 0) {
