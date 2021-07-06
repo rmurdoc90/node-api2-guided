@@ -3,7 +3,7 @@ const Adopter = require('./adopters-model')
 
 const router = express.Router()
 
-router.get('/api/adopters', (req, res) => {
+router.get('/', (req, res) => {
   Adopter.find(req.query)
     .then(adopters => {
       res.status(200).json(adopters);
@@ -16,7 +16,7 @@ router.get('/api/adopters', (req, res) => {
     });
 });
 
-router.get('/api/adopters/:id', (req, res) => {
+router.get('/:id', (req, res) => {
   Adopter.findById(req.params.id)
     .then(adopter => {
       if (adopter) {
