@@ -3,7 +3,7 @@
 // BREAK UP THIS MONOLITHIC FILE USING ROUTES
 const express = require('express');
 const adoptersRouter = require('./adopters/adopters-router');
-const Dog = require('./dogs/dogs-model');
+const dogRouter = require('./dogs/dogs-router');
 
 const server = express();
 
