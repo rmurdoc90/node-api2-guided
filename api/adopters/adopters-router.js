@@ -37,7 +37,10 @@ router.get('/:id/dogs', async (req, res) => {
   try {
 
   } catch (err) {
-    
+    res.status(500).json({
+      custom: 'crash inside endpoint',
+      message: err.message,
+    })
   }
 });
 
