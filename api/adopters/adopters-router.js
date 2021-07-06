@@ -34,20 +34,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.get('/:id/dogs', (req, res) => {
-  Adopter.findDogs(req.params.id)
-    .then(dogs => {
-      if (dogs.length > 0) {
-        res.status(200).json(dogs);
-      } else {
-        res.status(404).json({ message: 'No dogs for this adopter' });
-      }
-    })
-    .catch(error => {
-      console.log(error);
-      res.status(500).json({
-        message: 'Error retrieving the dogs for this adopter',
-      });
-    });
+  
 });
 
 router.post('/', (req, res) => {
